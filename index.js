@@ -1,5 +1,9 @@
 module.exports = {
     extends: 'airbnb',
+    env: {
+        es6: true,
+        browser: true,
+    },
     settings: {
         react: {
             pragma: 'h',
@@ -23,19 +27,20 @@ module.exports = {
             ignoreRegExpLiterals: true,
             ignoreStrings: true,
             ignoreTemplateLiterals: true
-        }
-        ],
+        }],
         'max-classes-per-file': 'off',
         'object-curly-newline': 'off',
         'operator-linebreak': ['error', 'after', { overrides: { '?': 'before', ':': 'before' } }],
-        'no-unused-vars': ['error', { 'varsIgnorePattern': '^h$' }],
+        'no-unused-vars': ['error', { varsIgnorePattern: '^h$' }],
         'no-console': ['warn', { allow: ['warn', 'error'] }],
         'import/prefer-default-export': 'off',
-        'react/prop-types': 0,
-        'react/no-unknown-property': ['error', { ignore: ['class'] }],
+        'react/prop-types': 'off',
+        'react/no-unused-state': 'off',
+        'react/destructuring-assignment': 'off',
+        'react/no-unknown-property': ['warn', { ignore: ['class'] }],
         'react/jsx-filename-extension': 'off',
         'react/jsx-props-no-spreading': 'off',
         'react/jsx-indent': ['error', 4],
-        'react/jsx-indent-props': ['error', 4]
+        'react/jsx-indent-props': ['error', 4],
     }
 };
