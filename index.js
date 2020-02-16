@@ -34,13 +34,16 @@ module.exports = {
         'no-unused-vars': ['error', { varsIgnorePattern: '^h$' }],
         'no-console': ['warn', { allow: ['warn', 'error'] }],
         'import/prefer-default-export': 'off',
+        'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }],
         'react/prop-types': 'off',
         'react/no-unused-state': 'off',
         'react/destructuring-assignment': 'off',
         'react/no-unknown-property': ['warn', { ignore: ['class'] }],
         'react/jsx-filename-extension': 'off',
         'react/jsx-props-no-spreading': 'off',
+        'react/jsx-one-expression-per-line': 'off',
         'react/jsx-indent': ['error', 4],
         'react/jsx-indent-props': ['error', 4],
+        'react/self-closing-comp': ['error', { component: true, html: false }]
     }
 };
